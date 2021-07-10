@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body style="margin: 0">
+    <!-- 분할 -->
+    <div style="overflow: hidden">
+
+        <div class="container">
+
+            <div class="inner">
+                <img src="용안.jpg">
+            </div>
+            <div class="inner">
+                <img src="용안2.jpg">
+            </div>
+            <div class="inner">
+                <img src="jannabi.jpg">
+            </div>
+        </div>
+    </div>
+
+    <button class="button1">1</button>
+    <button class="button2">2</button>
+    <button class="button3">3</button>
+
+    <script> //JS로 눌렀을 때 구현
+        // 버튼 2를 누르면
+        // transform: translate(-100vw)
+
+        document.querySelector('.button2').addEventListener('click', function () {
+            document.querySelector('.container').style.transform = 'translate(-100vw)';
+        })
+
+        document.querySelector('.button3').addEventListener('click', function () {
+            document.querySelector('.container').style.transform = 'translate(-200vw)';
+        })
+
+        /*
+            1. 다음, 이전버튼
+            2. 사진 많아지면? - 확장성(반복문..?)
+        */
+
+    </script>
+
+</body>
+
+</html>

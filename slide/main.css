@@ -1,0 +1,12 @@
+.container {
+    width: 300vw;
+    transition: transform 0.5s /*서서히 변경(0.5초만에) */
+}
+.inner {
+    width: 100vw;
+    float: left;
+}
+
+.inner img {
+    width: 30%
+}
